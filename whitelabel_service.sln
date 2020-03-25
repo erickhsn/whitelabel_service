@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Whitelabel.Service.API", "whitelabel_service\Whitelabel.Service.API.csproj", "{A4EB95F1-FF55-4518-8465-6A94DE3686FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - API", "01 - API", "{610253CC-0308-4F35-AF42-7359675A1E52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - APP", "02 - APP", "{B987E5D7-10A8-4095-B155-D36AA1070763}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{24D590F9-BE45-4888-9C87-892349436BA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Impl", "04 - Impl", "{A643D84D-8182-4826-A9EE-0EC645EE8AA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - UnitTest", "05 - UnitTest", "{C9EC0FDB-36B6-45C5-853F-E38819D7CC07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - CrossCutting", "06 - CrossCutting", "{3E708F95-7DAC-433F-8069-8F3C58660D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelabel.Service.APP", "Whitelabel.Serive.APP\Whitelabel.Service.APP.csproj", "{A7916FB1-99C2-4D81-A2CE-D9A04D4A004A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelabel.Service.Domain", "Whitelabel.Service.Domain\Whitelabel.Service.Domain.csproj", "{4A42B901-A842-42E3-90DB-D03F47012798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelabel.Service.Impl", "Whitelabel.Service.Impl\Whitelabel.Service.Impl.csproj", "{A4268F1C-8D94-4763-B97F-8E20B0C55F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelabel.Serivice.UnitTest", "Whitelabel.Serivice.UnitTest\Whitelabel.Serivice.UnitTest.csproj", "{B7B54E6F-8B66-4332-BFB3-2C50D36C6A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelabel.Service.CrossCutting", "Whitelabel.Service.CrossCutting\Whitelabel.Service.CrossCutting.csproj", "{B110B01F-7BBD-4FA8-89FF-24B5A60962AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4EB95F1-FF55-4518-8465-6A94DE3686FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4EB95F1-FF55-4518-8465-6A94DE3686FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4EB95F1-FF55-4518-8465-6A94DE3686FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4EB95F1-FF55-4518-8465-6A94DE3686FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7916FB1-99C2-4D81-A2CE-D9A04D4A004A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7916FB1-99C2-4D81-A2CE-D9A04D4A004A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7916FB1-99C2-4D81-A2CE-D9A04D4A004A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7916FB1-99C2-4D81-A2CE-D9A04D4A004A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A42B901-A842-42E3-90DB-D03F47012798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A42B901-A842-42E3-90DB-D03F47012798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A42B901-A842-42E3-90DB-D03F47012798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A42B901-A842-42E3-90DB-D03F47012798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4268F1C-8D94-4763-B97F-8E20B0C55F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4268F1C-8D94-4763-B97F-8E20B0C55F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4268F1C-8D94-4763-B97F-8E20B0C55F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4268F1C-8D94-4763-B97F-8E20B0C55F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B54E6F-8B66-4332-BFB3-2C50D36C6A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B54E6F-8B66-4332-BFB3-2C50D36C6A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B54E6F-8B66-4332-BFB3-2C50D36C6A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B54E6F-8B66-4332-BFB3-2C50D36C6A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B110B01F-7BBD-4FA8-89FF-24B5A60962AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B110B01F-7BBD-4FA8-89FF-24B5A60962AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B110B01F-7BBD-4FA8-89FF-24B5A60962AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B110B01F-7BBD-4FA8-89FF-24B5A60962AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4EB95F1-FF55-4518-8465-6A94DE3686FD} = {610253CC-0308-4F35-AF42-7359675A1E52}
+		{A7916FB1-99C2-4D81-A2CE-D9A04D4A004A} = {B987E5D7-10A8-4095-B155-D36AA1070763}
+		{4A42B901-A842-42E3-90DB-D03F47012798} = {24D590F9-BE45-4888-9C87-892349436BA6}
+		{A4268F1C-8D94-4763-B97F-8E20B0C55F42} = {A643D84D-8182-4826-A9EE-0EC645EE8AA8}
+		{B7B54E6F-8B66-4332-BFB3-2C50D36C6A9B} = {C9EC0FDB-36B6-45C5-853F-E38819D7CC07}
+		{B110B01F-7BBD-4FA8-89FF-24B5A60962AE} = {3E708F95-7DAC-433F-8069-8F3C58660D9C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36C92A44-1BF1-44D4-8E4D-4164F40E4619}
+	EndGlobalSection
+EndGlobal
