@@ -15,6 +15,6 @@ namespace Whitelabel.Service.Domain.Interfaces.Repository
 
         T Get(int id);
 
-        IList<T> getAll();
+        IList<T> GetAll();
     }
 }

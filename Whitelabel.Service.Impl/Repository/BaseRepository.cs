@@ -26,7 +26,7 @@ namespace Whitelabel.Service.Impl.Repository
             return _context.Set<T>().Find(id);
         }
 
-        public IList<T> getAll()
+        public IList<T> GetAll()
         {
             throw new NotImplementedException();
         }

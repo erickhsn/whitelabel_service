@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Whitelabel.Service.APP.Validators;
 using Whitelabel.Service.Domain.Entities;
 using Whitelabel.Service.Domain.Interfaces.Repository;
+using Whitelabel.Service.Domain.Interfaces.Services;
 
 namespace Whitelabel.Service.API.Controllers
 {
@@ -16,18 +18,36 @@ namespace Whitelabel.Service.API.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<ActionResult<User>> Usuarios([FromServices] IUserRepository userRepository, int id)
+        public async Task<ActionResult<User>> Usuarios([FromServices] IUserService userService, int id)
         {
-            return Ok(userRepository.Get(id));
+            try
+            {
+                var user = userService.Get(id);
+                return Ok(user);
+            }
+            catch(NullReferenceException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
         
         [HttpPost]
-        public async Task<ActionResult<User>> NewUser([FromServices] IUserRepository userRepository, [FromBody] User user)
+        public async Task<ActionResult<User>> NewUser([FromServices] IUserService userService, [FromBody] User user)
         {
-            userRepository.Insert(user);
+            try
+            {
+                userService.Post<UserValidator>(user);
 
-            return CreatedAtAction("NewUser", new { id = user.Id }, user);
-
+                return CreatedAtAction("NewUser", new { id = user.Id }, user);
+            }
+            catch(Exception)
+            {
+                return BadRequest();
+            }
         }
 
     }

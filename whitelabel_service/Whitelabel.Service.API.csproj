@@ -10,6 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Whitelabel.Serive.APP\Whitelabel.Service.APP.csproj" />
+    <ProjectReference Include="..\Whitelabel.Service.CrossCutting\Whitelabel.Service.CrossCutting.csproj" />
     <ProjectReference Include="..\Whitelabel.Service.Impl\Whitelabel.Service.Impl.csproj" />
   </ItemGroup>
 
